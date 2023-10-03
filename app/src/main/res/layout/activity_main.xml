@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ebeb"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="291dp"
+        android:layout_height="278dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/applogo"
+        android:src="@drawable/ic_launcher_foreground" />
+        <!-- VectorDrawable for Celsius to Fahrenheit icon -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Celsius to Fahrenheit Converter"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextCelsius"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appTitle"
+        android:layout_marginTop="74dp"
+        android:backgroundTint="#ebebeb"
+        android:hint="Enter Temperature in Celsius"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:minHeight="50dp"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCelsius"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/convert"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonConvert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

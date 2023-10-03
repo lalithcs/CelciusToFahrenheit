@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Celsius Circle -->
+    <path
+        android:pathData="M50,50 c25,0 25,-25 0,-25 c-25,0 -25,25 0,25 z"
+        android:fillColor="#ffffff" />
+
+    <!-- "C" Text -->
+
+    <!-- Fahrenheit Triangle -->
+    <path
+        android:pathData="M35,50 l15,-15 l15,15 z"
+        android:fillColor="#000000" />
+
+    <!-- "F" Text -->
+
+</vector>
